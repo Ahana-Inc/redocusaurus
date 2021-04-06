@@ -49,11 +49,12 @@ export default function redocTheme(
     getTypeScriptThemePath() {
       return path.join(__dirname, '..', 'src', 'theme');
     },
-    getSwizzleComponentList() {
-      return ['Redoc', 'ApiDoc'];
-    },
     getClientModules() {
       return [path.join(__dirname, 'custom.css')];
     },
   };
+};
+
+export function getSwizzleComponentList() {
+  return ['Redoc', 'ApiDoc'];
 };
