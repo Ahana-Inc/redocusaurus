@@ -9,9 +9,9 @@ import './styles.css';
 
 type RecursivePartial<T> = {
   [P in keyof T]?:
-    T[P] extends (infer U)[] ? RecursivePartial<U>[] :
-    T[P] extends object ? RecursivePartial<T[P]> :
-    T[P];
+  T[P] extends (infer U)[] ? RecursivePartial<U>[] :
+  T[P] extends object ? RecursivePartial<T[P]> :
+  T[P];
 };
 
 type ThemeOverrides = RecursivePartial<ResolvedThemeInterface>;
@@ -33,15 +33,33 @@ const DOCUSAURUS = {
 
 let LIGHT_THEME_OPTIONS: ThemeOverrides = {
   typography: {
-    fontFamily: DOCUSAURUS.fontFamily,
-    fontSize: DOCUSAURUS.fontSize,
+    fontSize: 'var(--ifm-font-size-base)',
+    lineHeight: 'var(--ifm-line-height-base)',
+    fontWeightRegular: 'var(--ifm-font-weight-normal)',
+    fontWeightBold: 'var(--ifm-font-weight-bold)',
+    fontWeightLight: 'var(--ifm-font-weight-light)',
+    fontFamily: 'var(--ifm-font-family-base)',
     headings: {
-      fontFamily: DOCUSAURUS.fontFamily,
-      // lineHeight: DOCUSAURUS.fontSize,
+      fontFamily: 'var(--ifm-font-family-base)',
+      fontWeight: 'var(--ifm-heading-font-weight)',
+      lineHeight: 'var(--ifm-heading-line-height)',
     },
+    code: {
+      fontSize: 'var(--ifm-code-font-size)',
+      color: 'var(--ifm-code-color)',
+      backgroundColor: 'var(--ifm-code-background)',
+    },
+    links: {
+      color: 'var(--ifm-link-color)',
+      visited: 'var(--ifm-link-color)',
+      hover: 'var(--ifm-link-hover-color)',
+    }
   },
   sidebar: {
+    width: 'var(--doc-sidebar-width)',
     backgroundColor: '#ffffff',
+    activeTextColor: 'var(--ifm-menu-color-active)',
+    textColor: 'var(--ifm-menu-color)',
   },
   rightPanel: {
     backgroundColor: DOCUSAURUS.darkGray,
@@ -64,16 +82,13 @@ let DARK_THEME_OPTIONS: ThemeOverrides = {
     },
   },
   schema: {
-    nestedBackground: DOCUSAURUS.dark.backgroundColor,
+    nestedBackground: '#1c1e21',
     typeNameColor: DOCUSAURUS.dark.secondaryText,
     typeTitleColor: DOCUSAURUS.dark.secondaryText,
   },
   sidebar: {
     backgroundColor: DOCUSAURUS.dark.backgroundColor,
-    textColor: DOCUSAURUS.dark.primaryText,
-    arrow: {
-      color: DOCUSAURUS.dark.primaryText,
-    },
+    textColor: 'var(--ifm-menu-color)',
   },
 };
 
@@ -95,7 +110,7 @@ function Redoc(props: Props) {
   return (
     <div className="redocusaurus">
       <RedocStandalone
-        {...(spec ? {spec} : {specUrl})}
+        {...(spec ? { spec } : { specUrl })}
         options={{
           scrollYOffset: 'nav.navbar',
           hideDownloadButton: true,

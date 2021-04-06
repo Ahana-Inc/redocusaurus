@@ -3,9 +3,24 @@
 }
 
 /* ------ Headings Overrides ------- */
+.redocusaurus h1 {
+  font-size: var(--ifm-h1-font-size);
+  color: var(--ifm-heading-color);
+}
 
-.redocusaurus h2,h3,h4 {
-  color: var(--ifm-font-color-base);
+.redocusaurus h2 {
+  font-size: var(--ifm-h2-font-size);
+  color: var(--ifm-heading-color);
+}
+
+.redocusaurus h3 {
+  font-size: var(--ifm-h3-font-size);
+  color: var(--ifm-heading-color);
+}
+
+.redocusaurus h4 {
+  font-size: var(--ifm-h4-font-size);
+  color: var(--ifm-heading-color);
 }
 
 .redocusaurus h5 {
@@ -22,14 +37,37 @@
   border-right: 1px solid var(--ifm-toc-border-color);
 }
 
+.redocusaurus .menu-content label.-depth1:hover {
+  color: var(--ifm-menu-color);
+}
+
+.redocusaurus .menu-content span {
+  font-size: 1rem;
+  font-weight: var(--ifm-font-weight-semibold);
+}
+
+.redocusaurus .menu-content label.active span {
+  color: var(--ifm-menu-color-active);
+}
+
+.redocusaurus .menu-content label.active span.operation-type {
+  color: white;
+}
+
 /* Hide Logo as already in navbar*/
-.redocusaurus .menu-content div:first-child {
+.redocusaurus .menu-content > div:first-child {
   display: none;
 }
 
-.redocusaurus .operation-type {
-  margin-top: 6px;
-  font-size: 8px;
+.redocusaurus .menu-content span.operation-type {
+  /* margin-top: 6px;
+  font-size: var(--ifm-font-size-base);
+  line-height: var(--ifm-line-height-base); */
+  color: white;
+  font-size: 0.7rem;
+  line-height: unset;
+  font-weight: var(--ifm-font-weight-bold);
+  margin-top: 4px;
 }
 
 /* ------- Right Panel Overrides ------- */
