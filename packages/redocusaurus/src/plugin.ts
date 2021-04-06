@@ -1,3 +1,3 @@
-import plugin from 'docusaurus-plugin-redoc';
+import plugin from '@ahana-inc/docusaurus-plugin-redoc';
 
 export default plugin;

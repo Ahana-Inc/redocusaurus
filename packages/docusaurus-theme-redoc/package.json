@@ -1,6 +1,6 @@
 {
-  "name": "docusaurus-theme-redoc",
-  "version": "0.3.2",
+  "name": "@ahana-inc/docusaurus-theme-redoc",
+  "version": "0.3.2-v3",
   "description": "Redoc Component for DocusaurusV2",
   "main": "dist/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rohit-gohri/redocusaurus.git"
+    "url": "git+https://github.com/ahana-inc/redocusaurus.git"
   },
   "keywords": [
     "redoc",
@@ -21,10 +21,6 @@
   ],
   "author": "Rohit Gohri <work@rohit.page>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rohit-gohri/redocusaurus/issues"
-  },
-  "homepage": "https://github.com/rohit-gohri/redocusaurus#readme",
   "dependencies": {
     "@docusaurus/types": "^2.0.0-alpha.70",
     "clsx": "^1.1.1",

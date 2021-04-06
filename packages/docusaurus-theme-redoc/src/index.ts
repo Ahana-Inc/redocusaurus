@@ -16,7 +16,7 @@ export default function redocTheme(
   options: ThemeOptions,
 ): Plugin<null> {
   return {
-    name: 'docusaurus-theme-redoc',
+    name: '@ahana-inc/docusaurus-theme-redoc',
     /**
      * @see https://github.com/Redocly/redoc/issues/1257
      */

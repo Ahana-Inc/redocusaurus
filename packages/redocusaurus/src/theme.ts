@@ -1,4 +1,4 @@
 // @ts-ignore
-import theme from 'docusaurus-theme-redoc';
+import theme from '@ahana-inc/docusaurus-theme-redoc';
 
 export default theme;

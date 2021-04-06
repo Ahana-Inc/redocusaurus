@@ -103,7 +103,7 @@ function getThemeOptions(baseTheme: ThemeOverrides, isDarkMode: boolean): ThemeO
 
 function Redoc(props: Props) {
   const { isDarkTheme } = useThemeContext();
-  const { baseTheme, redocOptions = null } = usePluginData('docusaurus-theme-redoc');
+  const { baseTheme, redocOptions = null } = usePluginData('@ahana-inc/docusaurus-theme-redoc');
   const theme = React.useMemo(() => getThemeOptions(baseTheme, isDarkTheme), [baseTheme, isDarkTheme]);
   const { spec, specUrl } = props;
 
