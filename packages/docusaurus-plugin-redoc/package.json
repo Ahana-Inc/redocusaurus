@@ -1,6 +1,6 @@
 {
   "name": "@ahana-inc/docusaurus-plugin-redoc",
-  "version": "0.3.2-v3",
+  "version": "0.3.2-v4",
   "description": "Redoc Plugin for DocusaurusV2",
   "main": "dist/index.js",
   "scripts": {
@@ -20,8 +20,8 @@
   "author": "Rohit Gohri <work@rohit.page>",
   "license": "MIT",
   "dependencies": {
-    "@docusaurus/types": "^2.0.0-alpha.70",
-    "@docusaurus/utils": "^2.0.0-alpha.70",
+    "@docusaurus/types": "^2.0.0-beta.0",
+    "@docusaurus/utils": "^2.0.0-beta.0",
     "joi": "^17.2.1",
     "yaml": "^1.10.0"
   },

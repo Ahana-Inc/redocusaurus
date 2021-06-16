@@ -1,6 +1,6 @@
 {
   "name": "@ahana-inc/docusaurus-theme-redoc",
-  "version": "0.3.2-v3",
+  "version": "0.3.2-v4",
   "description": "Redoc Component for DocusaurusV2",
   "main": "dist/index.js",
   "scripts": {
@@ -22,19 +22,19 @@
   "author": "Rohit Gohri <work@rohit.page>",
   "license": "MIT",
   "dependencies": {
-    "@docusaurus/types": "^2.0.0-alpha.70",
+    "@docusaurus/types": "^2.0.0-beta.0",
     "clsx": "^1.1.1",
     "copyfiles": "^2.4.1",
-    "core-js": "^3.8.0",
+    "core-js": "^3.14.0",
     "lodash": "^4.17.19",
-    "mobx": "^6.0.4",
-    "redoc": "^2.0.0-rc.48",
-    "styled-components": "^5.2.1",
-    "webpack": "^4.44.1"
+    "mobx": "^6.3.2",
+    "redoc": "^2.0.0-rc.54",
+    "styled-components": "^5.3.0",
+    "webpack": "^5.39.0"
   },
   "devDependencies": {
-    "@docusaurus/theme-classic": "^2.0.0-alpha.70",
-    "@types/lodash": "^4.14.167"
+    "@docusaurus/theme-classic": "^2.0.0-beta.0",
+    "@types/lodash": "^4.14.170"
   },
   "engines": {
     "node": ">=10.15.1"
