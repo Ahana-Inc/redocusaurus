@@ -1,6 +1,6 @@
 {
   "name": "@ahana-inc/redocusaurus",
-  "version": "0.3.2-v8",
+  "version": "0.3.2-v9",
   "description": "Redoc for DocusaurusV2",
   "main": "dist/index.js",
   "exports": {
@@ -25,8 +25,8 @@
   "author": "Rohit Gohri <work@rohit.page>",
   "license": "MIT",
   "dependencies": {
-    "@ahana-inc/docusaurus-plugin-redoc": "^0.3.2-v8",
-    "@ahana-inc/docusaurus-theme-redoc": "^0.3.2-v8",
+    "@ahana-inc/docusaurus-plugin-redoc": "^0.3.2-v9",
+    "@ahana-inc/docusaurus-theme-redoc": "^0.3.2-v9",
     "@docusaurus/types": "^2.0.0-beta.0"
   },
   "engines": {

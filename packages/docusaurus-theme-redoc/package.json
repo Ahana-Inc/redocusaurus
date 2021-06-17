@@ -1,6 +1,6 @@
 {
   "name": "@ahana-inc/docusaurus-theme-redoc",
-  "version": "0.3.2-v8",
+  "version": "0.3.2-v9",
   "description": "Redoc Component for DocusaurusV2",
   "main": "dist/index.js",
   "scripts": {
