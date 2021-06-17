@@ -5,6 +5,7 @@ import type {
   Plugin,
 } from '@docusaurus/types';
 import { RedocRawOptions } from 'redoc';
+import * as NodePolyfillPlugin from 'node-polyfill-webpack-plugin';
 
 export interface ThemeOptions {
   primaryColor?: string;
@@ -23,9 +24,7 @@ export default function redocTheme(
     configureWebpack(config, isServer, utils) {
       return {
         plugins: [
-          new webpack.ProvidePlugin({
-            Buffer: ['buffer', 'Buffer'],
-          }),
+          new NodePolyfillPlugin.default()
         ],
       };
     },
