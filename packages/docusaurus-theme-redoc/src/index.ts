@@ -22,10 +22,17 @@ export default function redocTheme(
      * @see https://github.com/Redocly/redoc/issues/1257
      */
     configureWebpack(config, isServer, utils) {
+      if (isServer) return {};
+
       return {
         plugins: [
           new NodePolyfillPlugin.default()
         ],
+        resolve: {
+          fallback: {
+            fs: false,
+          }
+        }
       };
     },
     async contentLoaded({content, actions}) {
