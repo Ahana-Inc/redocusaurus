@@ -1,6 +1,6 @@
 {
   "name": "@ahana-inc/docusaurus-plugin-redoc",
-  "version": "0.7.0",
+  "version": "0.7.0-v2",
   "description": "Redoc Plugin for DocusaurusV2",
   "main": "dist/index.js",
   "scripts": {

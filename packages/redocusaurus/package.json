@@ -1,6 +1,6 @@
 {
   "name": "@ahana-inc/redocusaurus",
-  "version": "0.7.0",
+  "version": "0.7.0-v4",
   "description": "Redoc for DocusaurusV2",
   "main": "dist/index.js",
   "exports": {
