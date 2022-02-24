@@ -45,22 +45,31 @@ const LIGHT_THEME_OPTIONS: RedocThemeOverrides = {
     fontWeightRegular: 'var(--ifm-font-weight-base)',
     fontWeightBold: 'var(--ifm-font-weight-bold)',
     headings: {
-      fontFamily: 'var(--ifm-font-family-base)',
-      fontWeight: 'var(--ifm-font-weight-semibold)',
-      lineHeight: 'var(--ifm-line-height-base)',
+      fontFamily: 'var(--ifm-heading-font-family)',
+      fontWeight: 'var(--ifm-heading-font-weight)',
+      lineHeight: 'var(--ifm-heading-line-height)',
     },
     code: {
+      backgroundColor: 'var(--ifm-code-background)',
+      fontSize: 'var(--ifm-code-font-size)',
       fontFamily: 'var(--ifm-font-family-monospace)',
       lineHeight: 'var(--ifm-pre-line-height)',
     },
+    links: {
+      color: 'var(--ifm-link-color)',
+      visited: 'var(--ifm-link-color)',
+      hover: 'var(--ifm-link-hover-color)',
+    }
   },
   sidebar: {
     /**
      * about the same as the sidebar in the docs area, for consistency
      * @see https://davidgoss.co/blog/api-documentation-redoc-docusaurus/
      */
-    width: '300px',
+    width: 'var(--doc-sidebar-width)',
     backgroundColor: '#ffffff',
+    activeTextColor: 'var(--ifm-menu-color-active)',
+    textColor: 'var(--ifm-menu-color)',
   },
   rightPanel: {
     backgroundColor: DOCUSAURUS.darkGray,
@@ -83,16 +92,13 @@ const DARK_THEME_OPTIONS: RedocThemeOverrides = {
     },
   },
   schema: {
-    nestedBackground: DOCUSAURUS.dark.backgroundColor,
+    nestedBackground: '#1c1e21',
     typeNameColor: DOCUSAURUS.dark.secondaryText,
     typeTitleColor: DOCUSAURUS.dark.secondaryText,
   },
   sidebar: {
     backgroundColor: DOCUSAURUS.dark.backgroundColor,
-    textColor: DOCUSAURUS.dark.primaryText,
-    arrow: {
-      color: DOCUSAURUS.dark.primaryText,
-    },
+    textColor: 'var(--ifm-menu-color)',
   },
 };
 
