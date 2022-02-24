@@ -1,6 +1,6 @@
 import type { LoadContext } from '@docusaurus/types';
-import type { PluginOptions } from 'docusaurus-plugin-redoc';
-import type { ThemeOptions } from 'docusaurus-theme-redoc';
+import type { PluginOptions } from '@ahana-inc/docusaurus-plugin-redoc';
+import type { ThemeOptions } from '@ahana-inc/docusaurus-theme-redoc';
 
 export interface PresetOptions {
   debug?: boolean;
@@ -34,10 +34,10 @@ export default function preset(
   }
 
   const config = {
-    themes: [[require.resolve('docusaurus-theme-redoc'), theme]],
+    themes: [[require.resolve('@ahana-inc/docusaurus-theme-redoc'), theme]],
     plugins: [
       ...specsArray.map((pluginOpts, index) => [
-        require.resolve('docusaurus-plugin-redoc'),
+        require.resolve('@ahana-inc/docusaurus-plugin-redoc'),
         {
           id: `plugin-redoc-${index}`,
           ...pluginOpts,

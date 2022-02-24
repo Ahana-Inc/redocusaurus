@@ -14,7 +14,7 @@ import './styles.css';
 function Redoc(props: Props): JSX.Element {
   const { isDarkTheme } = useColorMode();
   const { lightTheme, darkTheme, redocOptions } = usePluginData<GlobalData>(
-    'docusaurus-theme-redoc',
+    '@ahana-inc/docusaurus-theme-redoc',
   );
   const theme = isDarkTheme ? darkTheme : lightTheme;
   const { spec, specUrl } = props;

@@ -30,7 +30,7 @@ export default function redocPlugin(
     console.error('[REDOCUSAURUS_PLUGIN] Options:', options);
   }
   return {
-    name: 'docusaurus-plugin-redoc',
+    name: '@ahana-inc/docusaurus-plugin-redoc',
     async loadContent() {
       let content: Record<string, unknown> | null = null;
       if (spec) {

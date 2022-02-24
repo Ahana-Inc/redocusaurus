@@ -18,9 +18,9 @@ const ApiSchema: React.FC<Props> = ({
   ...rest
 }: Props): JSX.Element => {
   const { isDarkTheme } = useColorMode();
-  const allData = useAllPluginInstancesData<Spec>('docusaurus-plugin-redoc');
+  const allData = useAllPluginInstancesData<Spec>('@ahana-inc/docusaurus-plugin-redoc');
   const { lightTheme, darkTheme, redocOptions } = usePluginData<GlobalData>(
-    'docusaurus-theme-redoc',
+    '@ahana-inc/docusaurus-theme-redoc',
   );
   const theme = isDarkTheme ? darkTheme : lightTheme;
 

@@ -1,5 +1,5 @@
 {
-  "name": "redocusaurus-monorepo",
+  "name": "@ahana-inc/redocusaurus-monorepo",
   "version": "0.0.0",
   "description": "Redoc for DocusaurusV2",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rohit-gohri/redocusaurus.git"
+    "url": "git+https://github.com/ahana-inc/redocusaurus.git"
   },
   "keywords": [
     "redoc",
@@ -28,10 +28,6 @@
   ],
   "author": "Rohit Gohri <work@rohit.page>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rohit-gohri/redocusaurus/issues"
-  },
-  "homepage": "https://github.com/rohit-gohri/redocusaurus#readme",
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.2",
     "@changesets/cli": "^2.20.0",
